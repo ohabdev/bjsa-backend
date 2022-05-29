@@ -1,0 +1,11 @@
+{
+    "name": "Bangalijobsa API",
+    "version": "1.0.0",
+    "description": "Personal protfolio API",
+    "title": "Bangali job API documentation",
+    "url": "https://localhost:9000",
+    "template": {
+        "withCompare": true,
+        "withGenerator": true
+    }
+}

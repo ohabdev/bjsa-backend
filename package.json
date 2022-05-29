@@ -1,0 +1,35 @@
+{
+    "name": "bangalijobsa-api",
+    "description": "Bangalijob sa API Development",
+    "version": "1.0.0",
+    "main": "server/www.js",
+    "scripts": {
+        "start": "node ./server/www.js",
+        "dev": "NODE_ENV=development&nodemon ./server/www.js -e js,json",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "migrate": "node ./server/migrate.js",
+        "doc": "apidoc -i server/module -o apidocs; apidoc-postman -i server/ -o apidocs/"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "connect-mongo": "^3.2.0",
+        "cors": "^2.8.5",
+        "crypto": "^1.0.1",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-sesssion": "^1.15.5",
+        "lodash": "^4.17.20",
+        "method-override": "^3.0.0",
+        "mongoose": "^5.11.14",
+        "morgan": "^1.10.0",
+        "nconf": "^0.11.2",
+        "swig": "^1.4.2"
+    },
+    "devDependencies": {
+        "eslint": "^7.18.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.22.1"
+    },
+    "author": "Ohab Riaz <ohabdev@gmail.com>",
+    "license": "MIT"
+}
