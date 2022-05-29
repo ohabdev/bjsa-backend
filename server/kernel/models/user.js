@@ -13,6 +13,11 @@ exports.model = {
                 lowercase: true,
                 unique: true
             },
+            phoneNumber: {
+                index: true,
+                type: String,
+                unique: true
+            },
             role: {
                 type: String,
                 default: 'user',
@@ -21,6 +26,19 @@ exports.model = {
             password: {
                 type: String
             },
+            emailVerified: {
+                type: Boolean,
+                default: false
+            },
+
+            isActive: {
+                type: Boolean,
+                default: true
+            },
+            emailVerifiedToken: {
+                type: String,
+                default: null
+            },
             provider: {
                 type: String,
                 default: 'local'
@@ -28,6 +46,7 @@ exports.model = {
             salt: String,
             facebook: {},
             twitter: {},
+            
             google: {},
             github: {},
             createdAt: { type: Date, default: Date.now },

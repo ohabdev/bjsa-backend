@@ -1,4 +1,4 @@
-
+register
 // Config collections migrations schema
 
 module.exports =  async () => DB.Config.find({})

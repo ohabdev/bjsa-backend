@@ -19,7 +19,8 @@ const kernel = new Kernel();
 kernel.loadModule(require('./module/system'));
 kernel.loadModule(require('./module/i18n'));
 kernel.loadModule(require('./module/country'));
-
+kernel.loadModule(require('./module/passport'));
+kernel.loadModule(require('./module/user'));
 // NOTE - compose at last
 kernel.compose();
 
