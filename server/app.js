@@ -21,6 +21,8 @@ kernel.loadModule(require('./module/i18n'));
 kernel.loadModule(require('./module/country'));
 kernel.loadModule(require('./module/passport'));
 kernel.loadModule(require('./module/user'));
+kernel.loadModule(require('./module/media'));
+kernel.loadModule(require('./module/product'));
 // NOTE - compose at last
 kernel.compose();
 

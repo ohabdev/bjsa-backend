@@ -95,7 +95,6 @@ exports.updateAvatar = async (req, res, next) => {
     if (!user) {
       return next(PopulateResponse.notFound());
     }
-
     // create thumb for the avatar
     const thumbPath = await Image.resize({
       input: req.file.path,
